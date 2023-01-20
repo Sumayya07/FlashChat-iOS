@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		CAD10775297ACC480009A197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD10774297ACC480009A197 /* AppDelegate.swift */; };
 		CAD10777297ACC480009A197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD10776297ACC480009A197 /* SceneDelegate.swift */; };
-		CAD10779297ACC480009A197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD10778297ACC480009A197 /* ViewController.swift */; };
 		CAD1077C297ACC480009A197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD1077A297ACC480009A197 /* Main.storyboard */; };
 		CAD1077E297ACC490009A197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD1077D297ACC490009A197 /* Assets.xcassets */; };
 		CAD10781297ACC490009A197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD1077F297ACC490009A197 /* LaunchScreen.storyboard */; };
+		CAD10789297ACCA30009A197 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD10788297ACCA30009A197 /* WelcomeViewController.swift */; };
+		CAD1078B297AD6EE0009A197 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1078A297AD6EE0009A197 /* RegisterViewController.swift */; };
+		CAD1078D297AD8010009A197 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1078C297AD8010009A197 /* LoginViewController.swift */; };
+		CAD1078F297AD86F0009A197 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1078E297AD86F0009A197 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CAD10771297ACC480009A197 /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD10774297ACC480009A197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD10776297ACC480009A197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CAD10778297ACC480009A197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAD1077B297ACC480009A197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAD1077D297ACC490009A197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAD10780297ACC490009A197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAD10782297ACC490009A197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD10788297ACCA30009A197 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CAD1078A297AD6EE0009A197 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CAD1078C297AD8010009A197 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CAD1078E297AD86F0009A197 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				CAD10774297ACC480009A197 /* AppDelegate.swift */,
 				CAD10776297ACC480009A197 /* SceneDelegate.swift */,
-				CAD10778297ACC480009A197 /* ViewController.swift */,
-				CAD1077A297ACC480009A197 /* Main.storyboard */,
 				CAD1077D297ACC490009A197 /* Assets.xcassets */,
 				CAD1077F297ACC490009A197 /* LaunchScreen.storyboard */,
 				CAD10782297ACC490009A197 /* Info.plist */,
+				CAD1078E297AD86F0009A197 /* ChatViewController.swift */,
+				CAD10788297ACCA30009A197 /* WelcomeViewController.swift */,
+				CAD1078C297AD8010009A197 /* LoginViewController.swift */,
+				CAD1078A297AD6EE0009A197 /* RegisterViewController.swift */,
+				CAD1077A297ACC480009A197 /* Main.storyboard */,
 			);
 			path = FlashChat;
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD10779297ACC480009A197 /* ViewController.swift in Sources */,
+				CAD10789297ACCA30009A197 /* WelcomeViewController.swift in Sources */,
 				CAD10775297ACC480009A197 /* AppDelegate.swift in Sources */,
 				CAD10777297ACC480009A197 /* SceneDelegate.swift in Sources */,
+				CAD1078D297AD8010009A197 /* LoginViewController.swift in Sources */,
+				CAD1078F297AD86F0009A197 /* ChatViewController.swift in Sources */,
+				CAD1078B297AD6EE0009A197 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
