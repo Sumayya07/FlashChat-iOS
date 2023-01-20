@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931239B017A7628FEB60BEC8 /* Pods_FlashChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F1AFAA8859E4633ABF1513 /* Pods_FlashChat.framework */; };
 		CAD10775297ACC480009A197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD10774297ACC480009A197 /* AppDelegate.swift */; };
 		CAD10777297ACC480009A197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD10776297ACC480009A197 /* SceneDelegate.swift */; };
 		CAD1077C297ACC480009A197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD1077A297ACC480009A197 /* Main.storyboard */; };
@@ -15,10 +16,12 @@
 		CAD10789297ACCA30009A197 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD10788297ACCA30009A197 /* WelcomeViewController.swift */; };
 		CAD1078B297AD6EE0009A197 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1078A297AD6EE0009A197 /* RegisterViewController.swift */; };
 		CAD1078D297AD8010009A197 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1078C297AD8010009A197 /* LoginViewController.swift */; };
-		CAD1078F297AD86F0009A197 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1078E297AD86F0009A197 /* ChatViewController.swift */; };
+		CAD10793297B080E0009A197 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAD10792297B080E0009A197 /* GoogleService-Info.plist */; };
+		CAD10796297B24910009A197 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD10795297B24910009A197 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A512A997CC2791978BA50AE /* Pods-FlashChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat.debug.xcconfig"; path = "Target Support Files/Pods-FlashChat/Pods-FlashChat.debug.xcconfig"; sourceTree = "<group>"; };
 		CAD10771297ACC480009A197 /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD10774297ACC480009A197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD10776297ACC480009A197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +32,10 @@
 		CAD10788297ACCA30009A197 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CAD1078A297AD6EE0009A197 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CAD1078C297AD8010009A197 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CAD1078E297AD86F0009A197 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CAD10792297B080E0009A197 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CAD10795297B24910009A197 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		D1F1AFAA8859E4633ABF1513 /* Pods_FlashChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2FB927D0C0DE9653E31EC74 /* Pods-FlashChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat.release.xcconfig"; path = "Target Support Files/Pods-FlashChat/Pods-FlashChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931239B017A7628FEB60BEC8 /* Pods_FlashChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18CAFE291988DE907B92B841 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A512A997CC2791978BA50AE /* Pods-FlashChat.debug.xcconfig */,
+				F2FB927D0C0DE9653E31EC74 /* Pods-FlashChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CAD10768297ACC480009A197 = {
 			isa = PBXGroup;
 			children = (
 				CAD10773297ACC480009A197 /* FlashChat */,
 				CAD10772297ACC480009A197 /* Products */,
+				18CAFE291988DE907B92B841 /* Pods */,
+				E7CCF90C7F2B7A81B9A3EFA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,13 +85,22 @@
 				CAD1077D297ACC490009A197 /* Assets.xcassets */,
 				CAD1077F297ACC490009A197 /* LaunchScreen.storyboard */,
 				CAD10782297ACC490009A197 /* Info.plist */,
-				CAD1078E297AD86F0009A197 /* ChatViewController.swift */,
+				CAD10792297B080E0009A197 /* GoogleService-Info.plist */,
 				CAD10788297ACCA30009A197 /* WelcomeViewController.swift */,
 				CAD1078C297AD8010009A197 /* LoginViewController.swift */,
 				CAD1078A297AD6EE0009A197 /* RegisterViewController.swift */,
+				CAD10795297B24910009A197 /* ChatViewController.swift */,
 				CAD1077A297ACC480009A197 /* Main.storyboard */,
 			);
 			path = FlashChat;
+			sourceTree = "<group>";
+		};
+		E7CCF90C7F2B7A81B9A3EFA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1F1AFAA8859E4633ABF1513 /* Pods_FlashChat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAD10785297ACC490009A197 /* Build configuration list for PBXNativeTarget "FlashChat" */;
 			buildPhases = (
+				A5FDF5B6F5CA0EC3DD1BB944 /* [CP] Check Pods Manifest.lock */,
 				CAD1076D297ACC480009A197 /* Sources */,
 				CAD1076E297ACC480009A197 /* Frameworks */,
 				CAD1076F297ACC480009A197 /* Resources */,
+				F02A3346E06568F4212C9523 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +149,9 @@
 				Base,
 			);
 			mainGroup = CAD10768297ACC480009A197;
+			packageReferences = (
+				CAD10794297B133A0009A197 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CAD10772297ACC480009A197 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,12 +167,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD10781297ACC490009A197 /* LaunchScreen.storyboard in Resources */,
+				CAD10793297B080E0009A197 /* GoogleService-Info.plist in Resources */,
 				CAD1077E297ACC490009A197 /* Assets.xcassets in Resources */,
 				CAD1077C297ACC480009A197 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5FDF5B6F5CA0EC3DD1BB944 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F02A3346E06568F4212C9523 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashChat/Pods-FlashChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashChat/Pods-FlashChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashChat/Pods-FlashChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAD1076D297ACC480009A197 /* Sources */ = {
@@ -151,7 +226,7 @@
 				CAD10775297ACC480009A197 /* AppDelegate.swift in Sources */,
 				CAD10777297ACC480009A197 /* SceneDelegate.swift in Sources */,
 				CAD1078D297AD8010009A197 /* LoginViewController.swift in Sources */,
-				CAD1078F297AD86F0009A197 /* ChatViewController.swift in Sources */,
+				CAD10796297B24910009A197 /* ChatViewController.swift in Sources */,
 				CAD1078B297AD6EE0009A197 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +369,7 @@
 		};
 		CAD10786297ACC490009A197 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A512A997CC2791978BA50AE /* Pods-FlashChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +398,7 @@
 		};
 		CAD10787297ACC490009A197 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FB927D0C0DE9653E31EC74 /* Pods-FlashChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,6 +447,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAD10794297B133A0009A197 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = CAD10769297ACC480009A197 /* Project object */;
 }

@@ -2,10 +2,11 @@
 //  ChatViewController.swift
 //  FlashChat
 //
-//  Created by Sumayya Siddiqui on 20/01/23.
+//  Created by Sumayya Siddiqui on 21/01/23.
 //
 
 import UIKit
+import Firebase
 
 class ChatViewController: UIViewController {
 
@@ -16,14 +17,17 @@ class ChatViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+            let firebaseAuth = Auth.auth()
+            
+        do {
+          try firebaseAuth.signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+        }
+          
+        }
+        
     }
-    */
 
-}
