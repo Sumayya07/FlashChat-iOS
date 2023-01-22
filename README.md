@@ -1,5 +1,5 @@
 # Flash-Chat-iOS
-Flash Chat is a free messaging app It’s simple, reliable, and private, so you can easily keep in touch with your friends and family. 
+Flash Chat is a free messaging app. It’s simple, reliable, and private, so you can easily keep in touch with your friends and family. 
 </br>
 I have used a service called Firebase Firestore as a backend database to store and retrieve messages from the cloud.
 
